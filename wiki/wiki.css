@@ -10,7 +10,7 @@
 
 /* reset */
 *{box-sizing:border-box;margin:0;padding:0}
-html,body{height:100%}
+html,body{height:100%; overflow-x: hidden;} /* prevent horizontal scroll */
 
 /* page layout: left sidebar + mainframe */
 body {
@@ -22,7 +22,6 @@ body {
   min-height: 100vh;
   scroll-behavior: smooth;
   padding-top: 70px; /* space for fixed header */
-  overflow-x: hidden;
 }
 
 /* Header (topbar) */
