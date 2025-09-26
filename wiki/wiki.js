@@ -1,7 +1,7 @@
 /* wiki/wiki.js — small SPA injector, lock icons, snow */
 
 // --- Config ---
-const DEFAULT_PAGE = 'pages/engine-settings.html';
+const DEFAULT_PAGE = 'pages/activity-tracking.html';
 
 // helper to fetch & inject page into #mainframe
 async function loadPage(pagePath, scrollToId) {
