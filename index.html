@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Froststrap Wiki</title>
+  <link rel="icon" type="image/png" href="../Froststrap%20Logo.png" />
+  <link rel="stylesheet" href="wiki.css" />
+</head>
+<body>
+  <!-- Topbar -->
+  <header>
+    <a class="logo" href="https://realmeddsam.github.io/Froststrap-Website/">
+      <img src="../Froststrap%20Logo.png" alt="Froststrap Logo" />
+      <span>Froststrap</span>
+    </a>
+
+    <nav>
+      <a class="top-home" href="https://realmeddsam.github.io/Froststrap-Website/" target="_blank" rel="noopener">Home</a>
+      <a class="top-faq" href="https://realmeddsam.github.io/Froststrap-Website/#faq" target="_blank" rel="noopener">FAQ</a>
+      <a class="top-wiki" href="./">Wiki</a>
+    </nav>
+  </header>
+
+  <!-- Left sidebar -->
+  <aside class="sidebar" id="wiki-sidebar">
+    <!-- We removed the large logo and text per request; only nav remains -->
+    <nav class="sidebar-nav">
+      <h4>Contents</h4>
+      <a class="page-link" data-page="pages/engine-settings.html" href="#">Engine settings</a>
+      <a class="page-link" data-page="pages/activity-tracking.html" href="#">Activity tracking</a>
+      <a class="page-link" data-page="pages/rpc.html" href="#">Froststrap RPC</a>
+
+      <h4>Help</h4>
+      <a href="troubleshooting.html" class="page-link" data-page="pages/troubleshooting.html" href="#">Troubleshooting</a>
+    </nav>
+  </aside>
+
+  <!-- Mainframe (pages will be injected here) -->
+  <main id="mainframe" aria-live="polite">
+    <!-- initial loading fallback -->
+    <div class="loading">Loading…</div>
+  </main>
+
+  <!-- Snow -->
+  <div class="snowflakes" aria-hidden="true"></div>
+
+  <script src="wiki.js" defer></script>
+</body>
+</html>
